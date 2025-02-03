@@ -69,6 +69,7 @@ const getRatingsByMealAndMess = async (req, res) => {
         const endDate = new Date();
         const startDate = new Date();
         startDate.setDate(endDate.getDate() - (days - 1));
+        mess_id = mess_id + 5;
 
         // Format dates to YYYY-MM-DD
         const formatDate = (date) => date.toISOString().split('T')[0];
